@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>show</title>
+</head>
+<body style="width: 468px; height: 60px; margin: 0px; padding: 0px;">
+	<div id="ag_ad" style="width: 468px; height: 60px; position: relative;">
+	 	<div id="adimg" style="position: absolute;left:0px; top:0px;width: 468px; height: 60px;z-index:2"> 
+		  <a href="http://adclick.g.doubleclick.net/aclk?sa=L&amp;ai=ChEjR6R_sWI1zy9PYBPiIq8gHlOvtlEbI39GT-gHAjbcBEAEgAGCdudCBkAWCARdjYS1wdWItODUyNzQ1Nzg3ODAwOTY0NcgBCakC_aKi13hxgz6oAwGqBKgBT9AZzI81DaBdpzlotT0eRGOT3Oem9O0I8sFbt9QKRN6TiyYLo4XUuBYIDIV-BI2n1EiN7aCGvYeLdZejWtXJdSaG3XkWhq3Y6NXWnAKplclJSpyNV9ra7Ac12wrpuEmLxNFmcv7NT0mrn2IHSL8Rismd-KzTY93lBdMg5Bqshtx_RiYFM0iwL5KXspxCktOQ2YW3vcbCMET3VnMi6ZoXUwho37_H7-pKgAazmdLXtt3MubgBoAYhqAemvhvYBwDSCAUIgGEQAQ&amp;num=1&amp;sig=AOD64_3PhNthFr7YhPAY12aASzyGsibufQ&amp;client=ca-pub-8527457878009645&amp;adurl=http://ad.agrantsem.com/AdServer/Tt?cus=17070&amp;eid=1&amp;src=ADX&amp;reqid=1704110814332b08ad743C3BA89BAC84&amp;mid=17070_8a0bae277282d0ca&amp;site=www.swiper.com.cn&amp;bidtag=null&amp;width=468&amp;height=60&amp;vs=2&amp;bkid=2477857456&amp;region=1000&amp;bt=A&amp;svs=733&amp;tp=3&amp;dt=D&amp;isapp=0&amp;pf=W&amp;pt=101&amp;ctp=0&amp;ft=101&amp;p=17070-1-2ca1745f90df0ea8adc1144291baa9ec&amp;d=http%3a%2f%2fmp.weixin.qq.com%2fs%2fHwJL9-aWExLo_c9Wrom2hQ%3fag_mid%3d17070-1-2ca1745f90df0ea8adc1144291baa9ec" target="_blank" class="ttobj">
+		    <img src="show_data/25008b6a6d0043ea88887e33e131f6cd.jpg" style="border: 0px; width: 468px; height: 60px;">
+		  </a>
+	 	</div>
+	 <!--add close button here-->
+	<div id="cb-x" class="cb-x"><a style="cursor: pointer;z-index: 2000" id="cb-x-a" title="关闭广告"><img src="show_data/button_close.svg" style="position: relative; cursor: pointer"></a></div><div id="floatdiv" style="width:468px; height:60px;"><div><span id="spclose" class="spclose">已关闭广告展示<a id="btrevert" class="a-revert">撤销</a></span><span id="spclosefinal" class="spclose">感谢您的反馈<a id="btrevertfinal" class="a-revert">撤销</a></span><span id="spanq">此推广内容有什么问题</span><span id="spanreason"><ul id="ulreason"><li><input value="11" name="reason" id="rd1" type="radio"><span>不感兴趣</span></li><li><input value="12" name="reason" id="rd2" type="radio"><span>视觉干扰</span></li><li><input value="13" name="reason" id="rd3" type="radio"><span>重复展示</span></li><li><input value="14" name="reason" id="rd4" type="radio"><span>其他</span></li></ul></span></div></div></div>
+	<div id="ag_cm">
+	<img style="width: 0px; height: 0px; display: none; border: 0px none;" src="show_data/pixel.png"></div>
+
+<script type="text/javascript" src="show_data/sendPosV12.js"></script>
+<script>cmdata = ["https://cm.g.doubleclick.net/pixel?google_nid=agrantcn&google_cm&ext_data=eyJzcmMiOiJzaG93In0"];showEvent(0,null,'viewability='+getViewExplore());checkImpression();</script>
+<script type="text/javascript">
+	function addImg(obj){
+		if(typeof cmdata === 'undefined')
+			return;
+		if(cmdata==null||cmdata.length==0)
+			return;	
+			
+	    var parent =  document.getElementById(obj);	
+		if(parent==null)
+			return;
+		for(var i=0;i<cmdata.length;i++){
+			if(cmdata[i]=="")
+				continue;
+			if(cmdata[i].indexOf("http")!=0)
+				continue;
+			var a = document.createElement("img"); //创建一个img
+			a.style.width="0px";
+			a.style.height="0px";
+			a.style.display="none";
+			a.style.border="0";
+			a.src = cmdata[i]; //赋值超链接网址
+			parent.appendChild(a);
+		}
+	}
+	addImg("ag_cm");
+</script>
+<link rel="stylesheet" type="text/css" href="show_data/button_close.css">
+<script type="text/javascript" src="show_data/button_close.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+		addCloseButton("./image/");
+		//sendPosData("adimg",1);
+	}
+</script>
+</body></html>

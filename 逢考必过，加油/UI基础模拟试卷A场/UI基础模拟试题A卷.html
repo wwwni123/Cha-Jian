@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>UI基础模拟试题A卷</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script>
+			window.onresize = window.onload = function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 20 + "px"
+			}
+		</script>
+		<!--开始喽-->
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			
+			#a{
+				width: 100%;
+				height: 10rem;
+			}
+			
+			nav {
+				width: 100%;
+				height: 3rem;
+				margin-top: -0.25rem;
+			}
+			
+			nav>ul {
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			nav>ul>li {
+				text-align: center;
+				width:15% ;
+			}
+			
+			nav>ul>li>div {
+				margin-top: 0.3rem;
+			}
+			nav>ul>li:hover{
+				color:dodgerblue;
+				border-bottom:0.2rem solid dodgerblue;
+			}
+			/*第二部分*/
+			header>div{
+				width: 100%;
+				height: 10rem;
+				display: flex;
+				padding: 1rem;
+				border-bottom: 0.1rem lightgray solid;
+				
+			}
+			header>div>div:nth-of-type(1){
+				height: 10rem;
+				width: 35%;
+			}
+			header>div>div:nth-of-type(2){
+				height: 10rem;
+				width: 65%;
+			}
+			header>div>div:nth-of-type(1)>img{
+				height: 4rem;
+				width: 8rem;
+				margin-left: 1rem;
+			}
+			section{
+				width: 100%;
+				height: 10rem;
+				display: flex;
+				justify-content: space-around;
+			}
+			section>img{
+				margin-top: 0.5rem;
+				width: 29%;
+				height: 9rem;
+			}
+		</style>
+	</head>
+	<!--banner部分-->
+	<img src="img/fs_01.jpg" id="a">
+	<!--导航条部分-->
+	<nav>
+		<ul>
+			<li>
+				<div>
+					<p>精华</p>
+					<p>Focus</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>时装</p>
+					<p>Fashion</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>美容</p>
+					<p>Beauty</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>明星</p>
+					<p>Star</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>男人</p>
+					<p>Man</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>生活</p>
+					<p>Life</p>
+				</div>
+
+			</li>
+			<li>
+				<div>
+					<p>奢侈品</p>
+					<p>Luxu</p>
+				</div>
+
+			</li>
+		</ul>
+	</nav>
+
+<!--第二部分-->
+	<header>
+		<div>
+			<div><img src="img/1.jpeg"></div>
+			<div>
+				<p style="color: blue;font-size: 2.3rem;">热吻后身体神奇</p>
+				<p style="color: lightgray;font-size: 1.2rem;">2017-4-30日  10:26:00</p>
+				<br />
+				<p style="color: gray;font-size: 1.7rem;">热吻后身体五大神奇变化</p>
+				<p style="color: gray;font-size: 1.7rem;">大脑产生快感激素</p>
+			</div>
+		</div>
+		
+		<div>
+			<div><img src="img/2.jpeg"></div>
+			<div>
+				<p style="color: blue;font-size: 2.3rem;">郭德纲时尚界的</p>
+				<p style="color: lightgray;font-size: 1.2rem;">2017-4-30日  10:26:00</p>
+				<br />
+				<p style="color: gray;font-size: 1.7rem;">&nbsp;时尚大牌互相较劲，暗</p>
+				<p style="color: gray;font-size: 1.7rem;">掐，难得有统一和谐的时</p>
+			</div>
+		</div>
+		
+		<div>
+			<div><img src="img/4.jpeg"></div>
+			<div>
+				<p style="color: blue;font-size: 2.3rem;">【盘点】韩星服</p>
+				<p style="color: lightgray;font-size: 1.2rem;">2017-4-30日  10:26:00</p>
+				<br />
+				<p style="color: gray;font-size: 1.7rem;">韩法律规定：男性30岁之</p>
+				<p style="color: gray;font-size: 1.7rem;">前必须服两年兵役</p>
+			</div>
+		</div>
+	</header>
+	<!--第三部分-->
+	<section>
+		<img src="img/fs_08.jpg">
+		<img src="img/fs_10.jpg"/>
+		<img src="img/fs_12.jpg"/>
+	</section>
+	<body>
+	</body>
+
+</html>

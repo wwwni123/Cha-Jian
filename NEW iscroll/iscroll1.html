@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+#content{
+
+	list-style: none;
+	
+}
+#wrapper{
+	width: 100%;
+}
+
+.item{
+	border: 1px solid black;
+	text-align: center;
+	height: 100px;
+}
+
+#head{
+	width: 100%;
+    display: none;
+    height:40px;
+	line-height:40px;
+	padding:5px 10px;
+}
+  
+
+#foots{
+   	width: 100%;
+    display: none;
+    height:40px;
+	line-height:40px;
+	padding:5px 10px;
+ }
+</style>
+</head>
+<body>
+<script src='iscroll-4/src/iscroll.js'></script>
+<script src="jquery-2.1.4.min.js"></script>
+
+<div id="head">
+<p>下拉刷新</p>
+</div>
+
+<div id="wrapper">
+
+<ul id="content">
+<li class="item">一</li>
+<li class="item">二</li>
+<li class="item">三</li>
+<li class="item">四</li>
+<li class="item">五</li>
+<li class="item">六</li>
+<li class="item">一</li>
+<li class="item">二</li>
+<li class="item">三</li>
+<li class="item">四</li>
+<li class="item">五</li>
+<li class="item">六</li>
+<li class="item">一</li>
+<li class="item">二</li>
+<li class="item">三</li>
+<li class="item">四</li>
+<li class="item">五</li>
+<li class="item">六</li>
+
+</ul>
+
+</div>
+
+<div id="foots">
+<p>上拉加载</p>
+</div>
+
+
+<script>
+//获取head
+var head = document.querySelector("#head");
+
+//初始化iscroll实例对象
+var isc = new iScroll("wrapper",{
+	// 隐藏滚动条
+	// hScrollbar:false,
+	// vScrollbar:false,
+     
+    //刷新回调
+	onRefresh:function(){
+
+	},
+
+	//滚动回调
+	onScrollMove:function(e){
+
+	// this.x  this.y  分别代表横向偏移量 纵向偏移量	
+
+     if(this.y > 10){
+        //用一个变量表示向下拉
+         this.direction = "down"
+     	// alert("刷新")
+       $("#head").css("display","inline")
+     }else if(this.y < -10)
+     {  
+     	//用一个变量表示向上拉
+     	this.direction = "up"
+       $("#foots").css("display","inline")
+       this.offsetTop = -40;
+
+     }
+
+     
+
+	},
+
+    //滚动完成回调
+	onScrollEnd:function(){
+     //向下拉
+	 if(this.direction == "down"){
+          
+          $("#head").html("<p>正在刷新。。。</p>")
+
+	 	var time =  setTimeout(function(){
+	 		//2秒后隐藏
+              head.style.display = "none";
+              var lis = document.querySelectorAll("li");
+
+     	for (var i = 0; i < lis.length; i++) {
+     		lis[i].innerText = i;
+     	}
+
+	 	},2000)
+         
+     }
+   //向上拉
+  if(this.direction == "up"){
+
+         $("#foots").html("<p>正在加载。。。</p>")
+	 	var time =  setTimeout(function(){
+	 		//2秒后隐藏
+              $("#foots").css("display","none");
+              $("#content").append("<li class='item'>新的元素</li>")
+              isc.refresh();
+
+	 	 },2000)
+
+     }
+
+
+
+	}
+
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

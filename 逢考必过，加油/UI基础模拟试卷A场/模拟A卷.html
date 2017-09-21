@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>模拟A卷</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<script>
+			window.onresize = window.onload = function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 20 + "px"
+			}
+		</script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	</head>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#img{
+				width: 100%;
+				height: 10rem;
+			}
+			section{
+				width: 100%;
+				height: 5rem;
+			}
+			section>ul{
+				height: 4rem;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+			}
+			section>ul>li{
+				height: 4rem;
+				text-align: center;
+				margin-top: 0.5rem;
+				width: 13%;
+			}
+			section>ul>li:hover{
+				color: dodgerblue;
+				border-bottom: 0.2rem dodgerblue solid;
+			}
+			#ul{
+				height: 12.5rem;
+				width: 100%;
+				display: flex;
+				padding: 0.5rem;
+				box-sizing: border-box;
+				border-bottom: 1px solid gray;
+				
+			}
+			#ul>li:nth-of-type(1){
+				width: 40%;
+				
+			}
+			#ul>li:nth-of-type(2){
+				width: 60%;
+			}
+			#ul>li:nth-of-type(1)>img{
+				height: 5rem;
+				width: 8rem;
+				margin-left: 0.2rem;
+			}
+			#ul>li:nth-of-type(1)>img:hover{
+				height: 8rem;
+			}
+			
+			
+			footer{
+				width: 100%;
+				height: 10rem;
+				background: red;	
+			}
+			
+			
+			
+			</style>
+	<body>
+		<!--开始喽-->
+		<!--banner部分-->
+		<img src="img/fs_01.jpg" id="img">
+		<section>
+			<ul>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+				<li>
+					<p>精华</p>
+					<p>Focus</p>
+				</li>
+			</ul>
+		</section>
+		
+		<!--第三部分-->
+			<ul id="ul">
+				<li><img src="img/fs_08.jpg"/></li>
+				<li>
+					<p style="font-size: 2.3rem;color: dodgerblue;">郭德纲时尚界的</p>
+					<p style="color: lightgray;">2017-5-2 10:40:00</p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的</p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的</p>
+				</li>
+			</ul>
+			<ul id="ul">
+				<li><img src="img/fs_10.jpg"/></li>
+				<li>
+					<p style="font-size: 2.3rem;color: dodgerblue;">郭德纲时尚界的</p>
+					<p style="color: lightgray;">2017-5-2 10:40:00</p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的</p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的</p>
+				</li>
+			</ul>
+			<ul id="ul">
+				<li><img src="img/fs_12.jpg"/></li>
+				<li>
+					<p style="font-size: 2.3rem;color: dodgerblue;">郭德纲时尚界的</p>
+					<p style="color: lightgray;">2017-5-2 10:40:00</p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的<br /></p>
+					<p style="font-size: 1.8rem;color: gray;">郭德纲时尚界的</p>
+				</li>
+			</ul>
+			
+			<!--页脚部分-->
+			<footer>
+				<div></div>
+				<div></div>
+				<div></div>
+			</footer>
+	</body>
+
+</html>

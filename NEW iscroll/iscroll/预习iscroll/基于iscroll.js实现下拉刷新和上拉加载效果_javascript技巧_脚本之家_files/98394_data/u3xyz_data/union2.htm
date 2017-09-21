@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<style type="text/css">
+body,div {
+margin:0; padding:0;
+}
+</style>
+</head>
+
+<body>
+<div id="baidu" style="width: 300px; height: 250px;"><iframe scrolling="no" marginwidth="0" marginheight="0" src="union2_data/baiduAfxId.htm" width="300" height="250" frameborder="0"></iframe></div>
+<script language="javascript">
+function $union(){
+	var param = window.location.search.replace('?', '');
+    var arr = param.split('_');
+	if(arr.length===4){
+		var e=document.getElementById("baidu");
+		if(e){
+			e.style.cssText="width:"+arr[1]+"px; height:"+arr[2]+"px";
+
+			var ifr = document.createElement('iframe');
+			ifr.scrolling="no";
+			ifr.marginWidth= "0";
+			ifr.marginHeight="0";
+			ifr.frameBorder="0";
+			ifr.width=arr[1];
+			ifr.height=arr[2];
+			ifr.allowTransparency="true";
+			ifr.src="http://11.mydrivers.com/duba/baiduAfxId.html#c_id="+arr[0];
+			e.appendChild(ifr);
+		}
+	}
+}
+$union();
+</script>
+
+
+<script charset="utf-8" async="true" src="../../ei.js"></script></body></html>

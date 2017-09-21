@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="32-slideable-menu_data/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(-1090px, 0px, 0px); transition-duration: 0ms;">
+           <div class="swiper-slide swiper-slide-prev" style="background-image: url(&quot;img/nature1.jpg&quot;); width: 1080px; margin-right: 10px;"></div>
+            <div class="swiper-slide swiper-slide-active" style="background-image: url(&quot;img/nature2.jpg&quot;); width: 1080px; margin-right: 10px;"></div>
+            <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;img/nature3.jpg&quot;); width: 1080px; margin-right: 10px;"></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature4.jpg&quot;); width: 1080px; margin-right: 10px;"></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature5.jpg&quot;); width: 1080px; margin-right: 10px;"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(125px, 0px, 0px); transition-duration: 0ms;">
+            <div class="swiper-slide swiper-slide-prev" style="background-image: url(&quot;img/nature1.jpg&quot;); margin-right: 10px;"></div>
+            <div class="swiper-slide swiper-slide-active" style="background-image: url(&quot;img/nature2.jpg&quot;); margin-right: 10px;"></div>
+            <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;img/nature3.jpg&quot;); margin-right: 10px;"></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature4.jpg&quot;); margin-right: 10px;"></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature5.jpg&quot;); margin-right: 10px;"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="32-slideable-menu_data/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+    
+    </script>
+
+
+</body></html>

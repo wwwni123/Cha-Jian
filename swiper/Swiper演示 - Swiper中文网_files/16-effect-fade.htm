@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="32-slideable-menu_data/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container-horizontal swiper-container-fade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" style="background-image: url(&quot;img/fade1.jpg&quot;); width: 1080px; opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+            <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;img/fade2.jpg&quot;); width: 1080px; opacity: 0; transform: translate3d(-1080px, 0px, 0px);"></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/fade3.jpg&quot;); width: 1080px; opacity: 0; transform: translate3d(-2160px, 0px, 0px);"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white swiper-button-disabled"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="32-slideable-menu_data/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+    });
+    </script>
+
+</body></html>

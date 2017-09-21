@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>初识echarts</title>
+		<style type="text/css">
+			#main{
+				width:600px;
+				height:400px;
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<!--为echarts准备一个具备大小（宽高）的dom-->
+		<div id="main"></div>
+		<script src="echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//基于准备好的dom,初始化echarts实例
+			var myChart = echarts.init(document.getElementById("main"));
+			//指定图表的配置项和数据
+			var option = {
+				title:{
+					text:'Echarts 入门实例'
+				},
+				tooltip:{
+					show:true,
+					alwaysShowContent:false
+				},
+				legend:{
+					data:['销量']
+				},
+				xAxis:{
+					data:[]
+				},
+				yAxis:{},
+				series:[{
+					name:'销量',
+					type:'line',
+					data:[]
+				}]
+			}
+			myChart.setOption(option);
+			//如果数据加载时间较长，一个空的坐标轴放在画布上也会让用户觉得是不是产生 bug 了，因此需要一个 loading 的动画来提示用户数据正在加载。
+			//ECharts 默认有提供了一个简单的加载动画。只需要调用 showLoading 方法显示。数据加载完成后再调用 hideLoading 方法隐藏加载动画。	
+			myChart.showLoading();
+			//jquery提供的异步加载方式ajax来读取数据
+			$.ajax({
+				type:'get',//请求方式
+				url:'data.json',//发送请求的地址
+				success:function(data){
+					    //loading
+					    myChart.hideLoading();
+						// 填入数据
+					    myChart.setOption({
+					        xAxis: {
+					            data: data.categories
+					        },
+					        series: [{
+					            // 根据名字对应到相应的系列
+					            name: '销量',
+					            data: data.data
+					        }]
+					    });
+				}
+			});
+		</script>
+	</body>
+</html>

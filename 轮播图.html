@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        img{
+             width: 100% !important;
+             height: 500px !important;
+         }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- 使用属性控制轮播 -->
+        <div class="col-md-10 col-md-offset-1">
+            <!-- data-ride="carousel":设置轮播自动开始播放 -->
+            <!-- data-interval="1000":设置轮播时间间隔；false：轮播不执行 -->
+            <!-- data-pause="hover"：(hover)鼠标移入暂停;除了hover之外都不会暂停 -->
+            <!-- data-wrap="false":设置播放一轮是否结束 -->
+            <!--  -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel"
+                 data-interval="3000"
+                 data-pause="hover"
+                 data-wrap="true">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="bg1.jpg" alt="第一张">
+                    </div>
+                    <div class="item">
+                        <img src="bg2.jpg" alt="第二张">
+                    </div>
+                    <div class="item">
+                        <img src="bg3.jpg" alt="第三张">
+                    </div>
+                    <div class="item">
+                        <img src="bg4.jpg" alt="第三张">
+                    </div>
+                    <div class="item">
+                        <img src="bg5.jpg" alt="第三张">
+                    </div>
+                    <div class="item">
+                        <img src="bg6.jpg" alt="第三张">
+                    </div>
+                </div>
+                <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

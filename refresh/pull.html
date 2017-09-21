@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="iscroll/iscroll-probe.js"></script>
+		<script src="iscroll/zepto.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="pull.css"/>
+	</head>
+	<body>
+		<!-- 头部标题  -->
+		<div class="header"></div>
+		<!--可滚动区域-->
+		<div id="wrapper">
+			
+			<div id="scrl">
+				<!-- 下拉刷新 -->
+				<div id="pulldown" class="" style="display: none;">
+					<div class="pulldownlabel"></div>
+				</div>
+				<div class="pulldowntips">下拉刷新</div>
+				<!--列表-->
+				<ul id="list">
+					<li>数据行1</li>
+					<li>数据行2</li>
+					<li>数据行3</li>
+					<li>数据行4</li>
+					<li>数据行5</li>
+					<li>数据行6</li>
+					<li>数据行7</li>
+					<li>数据行8</li>
+					<li>数据行9</li>
+					<li>数据行10</li>
+					<li>数据行11</li>
+					<li>数据行12</li>
+					<li>数据行13</li>
+					<li>数据行14</li>
+					<li>数据行15</li>
+					<li>数据行16</li>
+					<li>数据行17</li>
+					<li>数据行18</li>
+					<li>数据行19</li>
+					<li>数据行20</li>		
+				</ul>
+				<!-- 加载更多 -->
+				<div id="pullup" class="" style="display: none;">
+					<div class="pulluplabel">加载更多</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- 底部 -->
+		<div class="footer"></div>
+	</body>
+	<script type="text/javascript">
+		var pdown = $("#pulldown"),pup = $("#pullup"),pdownlabel = $(".pulldownlabel"),pupLabel = $(".pulluplabel"),list = $("#list")
+		var loading = 0 // 0表示默认状态，1表示显示加载中，2表示正在加载，判断0时才能再次刷新
+		var myS = new IScroll("#wrapper",{
+			scrollbars:true,
+			mouseWhell:false,
+			fadeScrollbars:true,
+			scrollY:true,
+			probeType:3,
+		})
+		
+		// 监听 滚动
+		myS.on("scroll",function(){
+			// 类名refresh 表示刷新, loading表示加载
+			console.log(this.y)
+			// 判断不在加载中，才能进行刷新或加载
+			if (loading == 0 && !pup.attr("class").match('refresh') && !pdown.attr('class').match('refresh|loading')){
+				// 下拉刷新
+				if(this.y > 40) {
+					pdown.addClass("refresh").show()
+					$(".pulldowntips").hide()
+					loading = 1
+					pdownlabel.text("松手刷新数据")
+					refresh()
+				}
+				// 上拉加载
+				if(this.y <(this.maxScrollY - 10)){
+					pup.addClass("refresh").show()
+					pupLabel.text("正在加载")
+					loading = 2
+					loadingfn()
+				}
+			}
+		})
+		
+		// 刷新 
+		function refresh(){
+			setTimeout(function(){
+				var li = ""
+				for (var i = 0; i < 3; i++) {
+					li += "<li> 新数据"+i+"</li>"
+				}
+				$("#list").prepend(li)
+				pdown.removeClass("refresh").hide()
+				// 更新IScroll
+				myS.refresh()
+				loading=0
+				$(".pulldowntips").show()
+				
+				
+			},1000)
+		}
+		
+		// 加载 
+		function loadingfn(){
+			setTimeout(function(){
+				var li = ""
+				for (var i = 0; i < 3; i++) {
+					li += "<li> 加载数据 "+i+"</li>"
+				}
+				// 添加数据 
+				$("#list").append(li)
+				// 把上拉加载 隐藏， 移除类名
+				pup.removeClass("refresh").hide()
+				// 更新IScroll
+				myS.refresh()
+				loading = 0
+			},1000)
+		}
+		
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

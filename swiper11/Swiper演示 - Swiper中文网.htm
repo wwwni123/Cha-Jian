@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Swiper演示 - Swiper中文网</title>
+<meta name="keywords" content="Swiper，Swiper在线演示，Swiper中文演示，Swiper效果演示，swiper demos">
+<meta name="description" content="收录了Swiper的30个在线示例（swiper demos），Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端，以及PC端网站能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。">
+<link href="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/base.css" rel="stylesheet" media="screen" type="text/css">
+<link href="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/layout.css" rel="stylesheet" media="screen" type="text/css">
+<link rel="shortcut icon" href="http://www.swiper.com.cn/templets/default/images/favicon.png">
+</head>
+<body id="demo">
+
+<div id="header"><div class="inner">
+<ul id="nav">
+<li id="logo"><a href="http://www.swiper.com.cn/"><img alt="Swiper中文网" title="Swiper中文网" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/logo.png" height="50" width="82"></a></li>
+<li><a href="http://www.swiper.com.cn/">首页</a></li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">在线演示</a> <b></b>
+<ul>
+<li><a href="http://www.swiper.com.cn/demo/index.html">Swiper基础演示</a> </li>
+<li><a href="http://www.swiper.com.cn/demo/senior/index.html">Swiper精彩应用（移动）</a> </li>
+<li><a href="http://www.swiper.com.cn/demo/web/index.html">Swiper精彩应用（PC）</a> </li>
+</ul>
+</li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">中文教程</a>  <b></b>
+<ul>
+<li><a href="http://www.swiper.com.cn/usage/index.html">Swiper使用方法</a> </li>
+<li><a href="http://www.swiper.com.cn/usage/animate/index.html">Swiper Animate使用方法</a> </li>
+</ul>
+</li>
+<li><a href="http://www.swiper.com.cn/api/index.html">API 文档</a> </li>
+<li><a href="http://www.swiper.com.cn/download/index.html">下载Swiper</a>  </li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="#">关于我们</a>  <b></b>
+<ul>
+<li><a href="http://www.swiper.com.cn/about/us/index.html">关于Swiper</a> </li>
+<li><a href="http://www.swiper.com.cn/about/contact/index.html">联系我们/加群讨论</a> </li>
+<li><a href="http://www.swiper.com.cn/about/link/index.html">合作伙伴</a> </li>
+</ul>
+</li>
+
+<li class="tobbs"><a href="http://bbs.swiper.com.cn/" target="_blank">交流、分享</a></li>
+<li><a href="http://2.swiper.com.cn/" target="_blank">回顾Swiper2</a></li>
+<li><a href="#" target="_blank" onclick="javascript:window.open('http://www.idangero.us/swiper/');return false;">Swiper英文网</a></li>
+</ul>
+<div class="search" id="search">
+      <form name="formsearch" action="/plus/search.php">
+        <div class="form">
+           <input name="kwtype" value="0" type="hidden">
+           <input name="q" class="search-keyword" id="search-keyword" value="搜索参数" onfocus="if(this.value=='搜索参数'){this.value='';}" onblur="if(this.value==''){this.value='搜索参数';}" type="text">
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        
+    </div>
+</div></div>
+<div class="full"><div class="innerbox" style="width:1080px;">
+
+
+<h1 class="sw-title">
+	Swiper演示</h1>
+<br>
+<p>
+	你可以下载以下全部实例：<a href="http://www.swiper.com.cn/download/index.html#file6" target="_blank">下载地址</a></p>
+<div class="demo">
+	<h3>
+		默认设置(01)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/01-default.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/01-default.htm" style="height:340px" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		自适应 / 全屏 + 分页(02)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/02-responsive.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/02-responsive.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		垂直方向 + 自适应 / 全屏(03)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/03-vertical.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/03-vertical.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		视差效果(28)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/28-parallax.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="28-parallax.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/28-parallax.htm" frameborder="0"></iframe></div>
+</div>
+
+
+
+
+
+<div class="demo">
+	<h3>
+		赞助商广告</h3>
+	
+	<div class="demo-iframe loaded" style="width:970px; margin-left:55px;">
+		<script src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/ca-pub-8527457878009645.js"></script><script async="" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/adsbygoogle.js"></script>
+<!-- 普通实例展示 -->
+<ins class="adsbygoogle" style="display:inline-block;width:970px;height:250px" data-ad-client="ca-pub-8527457878009645" data-ad-slot="5009205410" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="250" width="970"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+</div>
+
+<div class="demo">
+	<h3>
+		渐变效果(16)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/16-effect-fade.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="16-effect-fade.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/16-effect-fade.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		3D 方块效果(17)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/17-effect-cube.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="17-effect-cube.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/17-effect-cube.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		3D 覆盖流效果(18)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/18-effect-coverflow.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="18-effect-coverflow.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/18-effect-coverflow.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		3D 翻转效果(35)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/35-effect-flip.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="35-effect-flip.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/35-effect-flip.htm" frameborder="0"></iframe></div>
+</div>
+
+<div class="demo">
+	<h3>
+		在Slides之间产生间隙(04)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/04-space-between.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="04-space-between.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/04-space-between.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		分组显示 / Carousel 模式(05)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/05-slides-per-view.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="05-slides-per-view.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/05-slides-per-view.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		自动分组 / Carousel 模式(06)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/06-slides-per-view-auto.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="06-slides-per-view-auto.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/06-slides-per-view-auto.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		Slides居中(07)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/07-centered.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="07-centered.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/07-centered.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		Slides居中 + 自动分组(08)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/08-centered-auto.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="08-centered-auto.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/08-centered-auto.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		Free 模式 / 不自动贴合(09)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/09-freemode.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="09-freemode.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/09-freemode.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		多行Slides 分布(10)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/10-slides-per-column.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="10-slides-per-column.html" scrolling="no" style="height:430px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/10-slides-per-column.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		Swipers嵌套(11)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/11-nested.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="11-nested.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/11-nested.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		抓手光标(12)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/12-grab-cursor.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="12-grab-cursor.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/12-grab-cursor.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		滚动条(13)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/13-scrollbar.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="13-scrollbar.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/13-scrollbar.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		控制按钮(14)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/14-nav-arrows.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="14-nav-arrows.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/14-nav-arrows.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		Loop （循环）模式 / 无限 Loop(15)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/15-infinite-loop.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="15-infinite-loop.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/15-infinite-loop.htm" frameborder="0"></iframe></div>
+</div>
+
+<div class="demo">
+	<h3>
+		键盘控制 (在新窗口打开)(19)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/19-keyboard-control.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="19-keyboard-control.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/19-keyboard-control.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		鼠标控制(20)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/20-mousewheel-control.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="20-mousewheel-control.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/20-mousewheel-control.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		自动切换(21)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/21-autoplay.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="21-autoplay.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/21-autoplay.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		动态加载 Slides(22)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/22-dynamic-slides.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="22-dynamic-slides.html" scrolling="no" style="height:380px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/22-dynamic-slides.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		缩略图控制(23)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/23-thumbs-gallery.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="23-thumbs-gallery.html" scrolling="no" style="height:600px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/23-thumbs-gallery.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		散列导航 (25)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/25-hash-navigation.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="25-hash-navigation.html" scrolling="no" src="25-hash-navigation.html" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		RTL 布局(26)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/26-rtl.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="26-rtl.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/26-rtl.htm" frameborder="0"></iframe></div>
+</div>
+
+<div class="demo">
+	<h3>
+		自定义导航(29)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/29-custom-pagination.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="29-custom-pagination.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/29-custom-pagination.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		分式导航(36)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/36-pagination-fraction.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="36-pagination-fraction.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/36-pagination-fraction.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		进度条导航(37)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/37-pagination-progress.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="37-pagination-progress.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/37-pagination-progress.htm" frameborder="0"></iframe></div>
+</div>
+
+<div class="demo">
+
+<h3>
+		Advertisement</h3>
+        <br>
+        <div class="demo-iframe loaded" style="padding:20px 0; text-align:center;">
+<script async="" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/adsbygoogle.js"></script>
+<!-- 普通实例展示2 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8527457878009645" data-ad-slot="7434085017" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" frameborder="0" height="280" width="336"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+
+
+
+<div class="demo">
+	<h3>
+		延迟加载(30)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/30-lazy-load-images.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="30-lazy-load-images.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/30-lazy-load-images.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		内容滚动(32)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/32-scroll-container.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="32-scroll-container.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/32-scroll-container.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		响应式设置(33)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/33-responsive-breakpoints.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="33-responsive-breakpoints.html" scrolling="no" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/33-responsive-breakpoints.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		自动高度(34)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/34-autoheight.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="34-autoheight.html" scrolling="no" style="height:600px;" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/34-autoheight.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		在里面滚动</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/99-inner-scroll.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="99-inner-scroll.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/99-inner-scroll.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		变焦、点击放大（39）</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/39-zoom.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="39-zoom.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/39-zoom.htm" frameborder="0"></iframe></div>
+</div>
+<div class="demo">
+	<h3>
+		可滑动菜单(32)</h3>
+	<div class="demo-links">
+		<a class="demo-link-new-window" href="http://www.swiper.com.cn/demo/32-slideable-menu.html" target="_blank">在新窗口打开</a></div>
+	<div class="demo-iframe loaded">
+		<iframe data-src="32-slideable-menu.html" scrolling="no" style="height:340px" src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/32-slideable-menu.htm" frameborder="0"></iframe></div>
+</div>
+<p class="start-use">
+	<a href="http://www.swiper.com.cn/usage/index.html">开始使用Swiper</a></p>
+<script src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/jquery-1.js"></script><script>
+
+function lazyLoadDemos() {
+		$('.demo').each(function() {
+			var frameHolder = $(this).find('.demo-iframe');
+			if (frameHolder.hasClass('loaded')) return;
+			var frame = frameHolder.find('iframe');
+			var src = frame.attr('data-src');
+			if (frameHolder.offset().top < ($(window).scrollTop() + $(window).height() + 50)) {
+				frameHolder.addClass('loaded');
+				frame.attr('src', src);
+			}
+		});
+	}
+	if ($('.demo').length > 0) {
+		$('.demo').each(function() {
+			var t = $(this);
+			var demoFile = t.find('iframe').attr('data-src');
+		});
+		$(window).on('scroll resize', function() {
+			lazyLoadDemos();
+		});
+		lazyLoadDemos();
+	}
+</script>
+
+
+
+
+
+
+
+
+</div></div>
+<div id="footer">
+  <div class="inner">
+  <dl class="link">
+  <dt>网站地图</dt>
+  <dd><a href="http://swiper3.swiper.com.cn/">Swiper3中文网</a></dd>
+  <dd><a href="http://swiper2.swiper.com.cn/">Swiper2中文网</a></dd>
+  <dd><a href="http://bbs.swiper.com.cn/">Swiper资源·交流</a></dd>
+  <dd><a href="http://www.swiper.com.cn/about/contact">联系我们 </a></dd>
+  <dd><a href="http://www.swiper.com.cn/about/us/index.html">关于Swiper</a></dd>
+  <dd><a href="http://www.swiper.com.cn/demo/index.html">Swiper在线演示</a></dd>
+  </dl>
+  <dl class="link">
+  <dt>友情链接</dt>
+  <dd><a href="http://www.projet-cn.com/" target="_blank" date="2017-05-07">喷码机</a></dd>
+   <dd><a href="http://www.nmgf88.com/" target="_blank" date="2017-08-07">柠檬工坊加盟费多少</a></dd>
+  
+    <dd><a href="http://www.15jc.com/" target="_blank" date="2017-5-4">15教程网</a></dd>
+  
+   <dd><a href="http://www.ztdiaocha.com/" target="_blank" date="2017-05-3">上海私家侦探</a></dd>
+  
+  <dd><a href="http://www.afcpa.com.cn/" target="_blank" date="2017.5.1">财务管理师</a></dd>
+<dd><a href="http://www.665zt.cn/" target="_blank" date="2017.5.1">征途私服</a></dd>  
+ <dd><a href="http://www.9416.cn/" target="_blank" date="2017.5.1">义乌网站建设</a></dd>  
+   <dd><a href="http://www.yunwangke168.com/" target="_blank" date="2017.4.31">云网客</a></dd>
+  
+<dd><a href="http://www.vshechi.com/" target="_blank" date="2017-04-28">二手柴油发电机</a></dd>   
+ <dd><a href="http://www.weishangfuli.com/" target="_blank" date="2017-04-24">微信红包群</a></dd> 
+   <dd><a href="http://www.zhuobug.com/" target="_blank" date="2017-04-18">推广运营评估</a></dd>
+  
+  <dd><a href="http://www.huoyuandl.com/" target="_blank" date="2017-04-18">微商货源网</a></dd>
+ 
+
+ 
+ 
+<!--<dd class="buy"><a href="#" target="_blank" onclick="javascript:window.open('https://item.taobao.com/item.htm?id=542872801127');return false;">购买友情链接</a></dd>-->
+  </dl>
+   <dl>
+  <dt>致辞</dt>
+  <dd>感谢idangero创造的移动端触摸滑动插件Swiper带给我们的无限精彩。</dd>
+  </dl>
+ <dl class="link">
+  <dt>合作伙伴</dt>
+<dd><a href="http://www.aikaitao.com/" target="_blank">怎么开个淘宝网店</a></dd> 
+  <dd><a href="http://www.jkwxw.com/" target="_blank">联网报警</a></dd> 
+ <dd><a href="http://www.yufeishengda.com/" target="_blank">实验室规划</a></dd>  
+  <dd><a href="http://www.5aihao.com/" target="_blank">都市超级医圣</a></dd>
+  
+ <dd><a href="http://www.zqt888.cn/" target="_blank">上海证券通</a></dd>
+   <dd><a href="http://www.webqp.cn/" target="_blank">棋牌游戏开发</a></dd>
+  <dd><a href="http://www.soupv.cn/" target="_blank">vr资源</a></dd>
+   
+     <dd><a href="http://www.jsjk88.com/" target="_blank">压力变送器</a></dd>
+<dd><a href="http://www.jkyb.com/" target="_blank">无纸记录仪</a></dd>
+
+ <dd><a href="http://www.hcharts.cn/" target="_blank">Highcharts中文网</a></dd>
+  <dd><a href="http://www.lanrenzhijia.com/" target="_blank">jquery特效</a></dd>  
+  <dd><a href="http://www.swiper.com.cn/about/link/index.html">更多合作伙伴&gt;</a></dd>
+  </dl> 
+  
+  <div id="copyright">
+  Copyright © 2015 Swiper中文网,<a href="#" style="color:inherit; text-decoration:none;" onclick="javascript:window.open('http://www.miitbeian.gov.cn');return false;">粤ICP备15001020号</a>, All Rights Reserved。  </div>
+  
+  </div>
+</div>
+<script language="javascript">
+function display(li){    
+li.className='sub active';
+var subdis=li.getElementsByTagName("ul")[0];    
+subdis.style.display="block";    
+}
+function ndisplay(li){ 
+li.className='sub noactive';   
+var subdis=li.getElementsByTagName("ul")[0];        
+subdis.style.display="None";    
+}
+var preBtn=document.querySelectorAll('.pre-btn');
+for (var j=0; j<preBtn.length; j++) {
+preBtn[j].onclick = function(){
+	this.style.display='none';
+	this.parentNode.querySelector('.pre-load').style.display='none';
+	myframe=this.parentNode.querySelector('iframe');
+	framesrc=myframe.attributes["data-src"].value;
+	myframe.setAttribute("src",framesrc);
+}
+}
+
+</script>
+
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6387fcb06c7f33ad6787ab913d4e6d10' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=6387fcb06c7f33ad6787ab913d4e6d10" target="_blank"><img src="Swiper%E6%BC%94%E7%A4%BA%20-%20Swiper%E4%B8%AD%E6%96%87%E7%BD%91_files/21.gif" height="20" width="20" border="0"></a>
+<div>
+
+
+</div></div></body></html>

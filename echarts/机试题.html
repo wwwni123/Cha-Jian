@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        canvas{
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="500"></canvas>
+    <br>
+    <span>画笔粗细</span>：
+    <button>大</button>
+    <button>中</button>
+    <button>小</button>
+    <br>
+    <br>
+    <span>画笔颜色</span>:&nbsp;&nbsp;<input type="color">
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var cxt=canvas.getContext("2d");
+        var oBtn=document.getElementsByTagName("button");
+        var oInput=document.getElementsByTagName("input")[0];
+        oBtn[0].onclick=function(e){
+            canvas.onmousedown=function(e){
+                cxt.beginPath();
+                var ev=e||event;
+                var l=ev.clientX;
+                var t=ev.clientY;
+                cxt.moveTo(l,t);
+                canvas.onmousemove=function(e){
+                    var ev=e||event;
+                    var left=ev.clientX;
+                    var top=ev.clientY;
+                    cxt.lineTo(left,top);
+                    cxt.lineWidth=10;
+                    cxt.strokeStyle=oInput.value;
+                    cxt.stroke();
+                    canvas.onmouseup=function(){
+//                        canvas.onmousedown=null;
+                        canvas.onmousemove=null;
+                        cxt.closePath();
+                    }
+                }
+            }
+        }
+        oBtn[1].onclick=function(e){
+            canvas.onmousedown=function(e){
+                cxt.beginPath();
+                var ev=e||event;
+                var l=ev.clientX;
+                var t=ev.clientY;
+                cxt.moveTo(l,t);
+                canvas.onmousemove=function(e){
+                    var ev=e||event;
+                    var left=ev.clientX;
+                    var top=ev.clientY;
+                    cxt.lineTo(left,top);
+                    cxt.lineWidth=5;
+                    cxt.strokeStyle=oInput.value;
+                    cxt.stroke();
+                    canvas.onmouseup=function(){
+//                      canvas.onmousedown=null;
+                        canvas.onmousemove=null;
+                        cxt.closePath();
+                    }
+                }
+            }
+        }
+        oBtn[2].onclick=function(e){
+            canvas.onmousedown=function(e){
+                cxt.beginPath();
+                var ev=e||event;
+                var l=ev.clientX;
+                var t=ev.clientY;
+                cxt.moveTo(l,t);
+                canvas.onmousemove=function(e){
+                    var ev=e||event;
+                    var left=ev.clientX;
+                    var top=ev.clientY;
+                    cxt.lineTo(left,top);
+                    cxt.lineWidth=2;
+                    cxt.strokeStyle=oInput.value;
+                    cxt.stroke();
+                    canvas.onmouseup=function(){
+//                      canvas.onmousedown=null;
+                        canvas.onmousemove=null;
+                        cxt.closePath();
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

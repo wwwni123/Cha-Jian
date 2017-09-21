@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="32-slideable-menu_data/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container swiper-container-horizontal swiper-container-3d swiper-container-flip">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" style="background-image: url(&quot;img/nature1.jpg&quot;); width: 300px; z-index: 6; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);"><div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+            <div class="swiper-slide swiper-slide-next" style="background-image: url(&quot;img/nature2.jpg&quot;); width: 300px; z-index: 5; transform: translate3d(-300px, 0px, 0px) rotateX(0deg) rotateY(180deg);"><div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature3.jpg&quot;); width: 300px; z-index: 5; transform: translate3d(-600px, 0px, 0px) rotateX(0deg) rotateY(180deg);"><div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature4.jpg&quot;); width: 300px; z-index: 5; transform: translate3d(-900px, 0px, 0px) rotateX(0deg) rotateY(180deg);"><div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature5.jpg&quot;); width: 300px; z-index: 5; transform: translate3d(-1200px, 0px, 0px) rotateX(0deg) rotateY(180deg);"><div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+            <div class="swiper-slide" style="background-image: url(&quot;img/nature6.jpg&quot;); width: 300px; z-index: 5; transform: translate3d(-1500px, 0px, 0px) rotateX(0deg) rotateY(180deg);"><div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-prev swiper-button-disabled"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="32-slideable-menu_data/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'flip',
+        grabCursor: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    </script>
+
+</body></html>

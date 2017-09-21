@@ -1,0 +1,104 @@
+*{
+	padding:0;
+	margin:0;
+}
+*,*:after,*:before{
+	box-sizing:border-box;
+}
+a{
+	text-decoration:none;
+}
+.pos(a){
+	position:absolute;
+}
+.pos(r){
+	position:relative;
+}
+body{
+	width:100%;
+	height:100%;
+	font-family:"微软雅黑";
+	font-size:25px;
+	font-weight:bold;
+	background:orange;
+}
+.box{
+	width:820px;
+	height:200px;
+	margin:200px auto;
+	ul{
+		list-style:none;
+		li{
+			display:inline-block;
+			margin-left:50px;
+			a{
+				color:rgba(0,0,0,0.5);
+				-webkit-transition: all 1s;
+				.pos(r);
+				span{
+					width:80px;
+					height:80px;
+					.pos(a);
+					background:#fff;
+					border-radius:50%;
+					top:-100px;
+					left:50%;
+					margin-left:-40px;
+					text-align:center;
+					padding-top:25px;
+					&:after{
+						content:url('../img/tooltip1.svg');
+						.pos(a);
+						left:50%;
+						bottom:-20px;
+						margin-left:-15px;
+					}
+					i{
+						color:orange;
+					}
+				}
+				&:hover{
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+//动画最终
+.tooltip{
+	a:hover{
+		span{
+			-webkit-transform:rotate(0);
+		}
+		i{
+			-webkit-transform:scale3d(1,1,1);
+		}
+	}
+}
+//第一个动画
+.tooltip_effect1{
+	a{
+		span{
+			-webkit-transition:all 1s;
+			-webkit-transform-origin:bottom center;
+			-webkit-transform:rotate(45deg) translateX(10px);
+		}
+		i{
+			-webkit-transition:all 1s;
+			-webkit-transform:scale3d(0,0,0);
+		}
+	}
+}
+//第二个动画
+.tooltip_effect2{
+	a{
+		span{
+			-webkit-transition:all 1s;
+			-webkit-transform:translateY(10px);
+		}
+		i{
+			-webkit-transition:all 1s;
+			-webkit-transform:translateY(20px);
+		}
+	}
+}

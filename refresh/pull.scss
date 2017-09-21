@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow: hidden;
+}
+
+// 定位宏 @mixin p
+@mixin p($pi:absolute) {
+    position: $pi;
+}
+
+$bg:#CD235C;
+$clor:#eeeeee;
+
+// 头部
+.header {
+    @include p();
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background: $bg;
+    color: $clor;
+    text-align: center;
+    font-weight: bold;
+}
+// 底部
+.footer {
+    @include p();
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:4rem;
+    background: #999999;
+}
+
+#wrapper {
+    @include p();
+    left: 0;
+    top: 4rem;
+    bottom: 4rem;
+    width: 100%;
+    overflow: hidden;
+    
+    #scrl {
+        @include p();
+        width: 100%;
+        
+        #list {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            
+            li{
+                padding: 0 10px;
+                border-bottom: 1px dashed #007AFF;
+                height: 3.6rem;
+                line-height: 3.6rem;
+                font-size: 14px;
+            }
+        }
+        #pulldown,#pullup,.pulldowntips {
+            height: 4rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+        .pulldowntips {
+            @include p();
+            top: -4rem;
+            left: 0;
+            width: 100%;
+        }
+        
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
